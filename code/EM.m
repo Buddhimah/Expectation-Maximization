@@ -35,7 +35,7 @@ while shift > epsilon
     Data = Data_;
     Param = Param_;
     
-    clear Data_ Param_
+    
 end
 Data_f = Data;
 Param_f = Param;

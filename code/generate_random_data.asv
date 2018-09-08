@@ -21,16 +21,16 @@ D6=round(normrnd(49.96,0.527636,[1,n]));
 D7=round(normrnd(66.68687,4.386956,[1,n]));
 D8=round(normrnd(52.82828,0.377134,[1,n]));
 D9=round(normrnd(53.16162,2.237003,[1,n]));
-D = [transpose(D0) 0*ones(n,1);
-transpose(D1) 1*ones(n,1);
-transpose(D2) 2*ones(n,1);
-transpose(D3) 3*ones(n,1);
-transpose(D4) 4*ones(n,1);
-transpose(D5) 5*ones(n,1);
-transpose(D6) 6*ones(n,1);
-transpose(D7) 7*ones(n,1);
-transpose(D8) 8*ones(n,1);
-transpose(D9) 9*ones(n,1)];
+D = [D0 0*ones(size(D1,1),1);
+D1 1*ones(size(D2,1),1);
+D2 2*ones(size(D2,1),1)
+D3 3*ones(size(D2,1),1)
+D4 4*ones(size(D2,1),1)
+D5 5*ones(size(D2,1),1)
+D6 6*ones(size(D2,1),1)
+D7 7*ones(size(D2,1),1)
+D8 8*ones(size(D2,1),1)
+D9 9*ones(size(D2,1),1)];
 %D = [1*ones(size(D1,1),1) D1(:,1)  1*ones(size(D1,1),1);
 %1*ones(size(D1,1),1) D2(:,1) 2*ones(size(D2,1),1)];
 end

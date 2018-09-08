@@ -38,29 +38,11 @@ percent_cluster9 = size(points_in_cluster9,1) / size(Data,1);
 Param.lambda = [percent_cluster0, percent_cluster1,percent_cluster2,percent_cluster3,percent_cluster4,percent_cluster5,percent_cluster6,percent_cluster7,percent_cluster8,percent_cluster9];
 
 % calculate the means
-Param.mu0 = mean(points_in_cluster0(:,1));
 Param.mu1 = mean(points_in_cluster1(:,1));
 Param.mu2 = mean(points_in_cluster2(:,1));
-Param.mu3 = mean(points_in_cluster3(:,1));
-Param.mu4 = mean(points_in_cluster4(:,1));
-Param.mu5 = mean(points_in_cluster5(:,1));
-Param.mu6 = mean(points_in_cluster6(:,1));
-Param.mu7 = mean(points_in_cluster7(:,1));
-Param.mu8 = mean(points_in_cluster8(:,1));
-Param.mu9 = mean(points_in_cluster9(:,1));
-
 
 % calculate the variances
-Param.sigma0 = std(points_in_cluster0(:,1));
-Param.sigma1 = std(points_in_cluster1(:,1)) ;
-Param.sigma2 = std(points_in_cluster2(:,1)) ;
-Param.sigma3 = std(points_in_cluster3(:,1)) ;
-Param.sigma4 = std(points_in_cluster4(:,1)) ;
-Param.sigma5 = std(points_in_cluster5(:,1)) ;
-Param.sigma6 = std(points_in_cluster6(:,1)) ;
-Param.sigma7 = std(points_in_cluster7(:,1)) ;
-Param.sigma8 = std(points_in_cluster8(:,1)) ;
-Param.sigma9 = std(points_in_cluster9(:,1)) ;
-
+Param.sigma1 = std(points_in_cluster1(:,1)) 0; 0 std(points_in_cluster1(:,2));
+Param.sigma2 = std(points_in_cluster2(:,1)) 0; 0 std(points_in_cluster2(:,2));
 
 end
