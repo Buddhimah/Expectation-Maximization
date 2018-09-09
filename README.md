@@ -35,3 +35,12 @@ iteration: 7, error: 0.0000, mu1: [0.1833 4.7249], mu2: [4.9603 -0.1089]
 * No extra Toolbox is required
 * clone the repository, 
 * In Matlab, set the `code` folder as the current path and run the `test_em.m` file.
+
+### How do I get set up? The 1D version###
+* The algorithm is coded in MATLAB
+* No extra Toolbox is required
+* clone the repository, 
+* In Matlab, set the `code` folder as the current path and run the `test_em.m` file.
+* Then Run get_cluster_ans giving nessasarry parameters
+* data_set - the data which you want to find in which cluster
+* Clustered_Data - Data_f variable created from running test_em.m
