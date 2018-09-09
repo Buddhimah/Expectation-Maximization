@@ -1,13 +1,13 @@
 clc, clear, close all
 
 % number of points in each cluster
-num_points = 100; 
+num_points = 500; 
 
 % generate random data using two 2D Normal distributions with 100 data points 
 Data = generate_random_data(num_points);
 
 % reshuffle the data labels
-Data_r = [Data(:,1:2) randi(2,10*num_points,1)];
+Data_r = [Data(:,1:2) randi([0,9],10*num_points,1)];
 
 % make some initial guess
 Param = make_initial_guess();

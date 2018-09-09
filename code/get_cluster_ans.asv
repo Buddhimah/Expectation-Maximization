@@ -1,0 +1,6 @@
+function cluster = get_cluster_ans(data_set,Clustered_Data)
+
+count = zeros(10,1);
+for i =1:size(data_set)
+    count(find_cluster(data_set(i))+1)
+    
